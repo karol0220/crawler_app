@@ -1,0 +1,30 @@
+{
+  "mapping": {
+      "response": {
+        "properties": {
+          "timestamp": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss"
+          }
+        }
+    }
+  },
+  "search_all": {
+    "size": 100,
+    "query": {
+      "match_all": {}
+    }
+  },
+  "search_service": {
+    "size": 100,
+    "query": {
+      "match": {"url": "%s"}
+    }
+  },
+  "search_code": {
+    "size": 100,
+    "query": {
+      "match": {"resp_code": "%s"}
+    }
+  }
+}

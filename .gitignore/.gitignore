@@ -8,6 +8,9 @@ instance/
 .webassets-cache
 
 *.log
+.env
+.venv
+env/
 
 #pyCharm files
 *.iml
